@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="683.0" style="-fx-background-color: #457b9d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MemberBookListController">
+   <children>
+      <TextField fx:id="txtSearchBook" layoutX="247.0" layoutY="26.0" onKeyReleased="#actionSearchBook" prefHeight="26.0" prefWidth="238.0" />
+      <Label layoutX="197.0" layoutY="26.0" prefHeight="26.0" prefWidth="50.0" text="Arama:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBook" layoutY="66.0" prefHeight="334.0" prefWidth="683.0" style="-fx-background-color: #457b9d;">
+        <columns>
+            <TableColumn fx:id="colTitle" prefWidth="164.00000607967377" style="-fx-background-color: #457b9d;" text="İsim" />
+          <TableColumn fx:id="colType" minWidth="5.5999755859375" prefWidth="110.39996337890625" style="-fx-background-color: #457b9d;" text="Tür" />
+            <TableColumn fx:id="colAuthor" prefWidth="120.0" style="-fx-background-color: #457b9d;" text="Yazar" />
+          <TableColumn fx:id="colISBN" prefWidth="109.5999755859375" style="-fx-background-color: #457b9d;" text="ISBN" />
+            <TableColumn fx:id="colYearPublished" prefWidth="103.20001220703125" style="-fx-background-color: #457b9d;" text="Yayınlanma Yılı" />
+            <TableColumn fx:id="colPageQuantity" prefWidth="76.80001831054688" style="-fx-background-color: #457b9d;" text="Sayfa Sayısı" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="683.0" style="-fx-background-color: #457b9d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MemberListController">
+   <children>
+      <TextField fx:id="txtMemberSearch" layoutX="247.0" layoutY="26.0" onKeyReleased="#actionSearchMember" prefHeight="26.0" prefWidth="238.0" />
+      <Label layoutX="197.0" layoutY="26.0" prefHeight="26.0" prefWidth="50.0" text="Arama:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblMember" layoutY="66.0" prefHeight="334.0" prefWidth="683.0" style="-fx-background-color: #457b9d;">
+        <columns>
+          <TableColumn fx:id="colName" minWidth="5.5999755859375" prefWidth="217.59998166561127" style="-fx-background-color: #457b9d;" text="İsim Soyisim" />
+            <TableColumn fx:id="colPassword" prefWidth="168.0" style="-fx-background-color: #457b9d;" text="Şifre" />
+          <TableColumn fx:id="colMail" prefWidth="296.7999572753906" style="-fx-background-color: #457b9d;" text="Email" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#actionBack" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #0000ff;" text="GERİ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

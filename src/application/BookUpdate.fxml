@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="683.0" style="-fx-background-color: #457b9d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BookUpdateController">
+   <children>
+      <Label layoutX="158.0" layoutY="107.0" text="Kitap Adı:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="142.0" text="Kitap Türü:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="175.0" text="Kitap Yazar:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="158.0" layoutY="210.0" text="Kitap ISBN:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="243.0" prefHeight="20.0" prefWidth="118.0" text="Yayınlanma Tarihi:">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="159.0" layoutY="277.0" text="Sayfa Sayısı:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookType" layoutX="282.0" layoutY="139.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtAuthor" layoutX="282.0" layoutY="173.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtISBN" layoutX="282.0" layoutY="207.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtPublishedYear" layoutX="282.0" layoutY="241.0" prefHeight="26.0" prefWidth="242.0" />
+      <TextField fx:id="txtPageQuantity" layoutX="282.0" layoutY="275.0" prefHeight="26.0" prefWidth="242.0" />
+      <Button fx:id="btnUpdate" layoutX="266.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#actionBookUpdate" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #0000ff;" text="GÜNCELLE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbBookName" layoutX="282.0" layoutY="71.0" onAction="#writeInfos" prefHeight="26.0" prefWidth="242.0" />
+      <Button fx:id="btnBack" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onMouseClicked="#actionBack" prefHeight="30.0" prefWidth="66.0" style="-fx-background-color: #0000ff;" text="GERİ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtBookName" layoutX="282.0" layoutY="104.0" prefHeight="26.0" prefWidth="242.0" />
+      <Label layoutX="158.0" layoutY="74.0" text="Kitaplar:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
